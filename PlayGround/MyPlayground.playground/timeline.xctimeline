@@ -3,12 +3,20 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
+<<<<<<< HEAD
          documentLocation = "file:///Users/flp4/Documents/Cloud%20Mail.Ru/GB_ios/Xcode/PlayGround/MyPlayground.playground#CharacterRangeLen=390&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=0&amp;EndingLineNumber=25&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=569350675.542003"
+=======
+         documentLocation = "file:///Users/flp4/Documents/Cloud%20Mail.Ru/GB_ios/Xcode/PlayGround/MyPlayground.playground#CharacterRangeLen=550&amp;CharacterRangeLoc=0&amp;EndingColumnNumber=0&amp;EndingLineNumber=33&amp;StartingColumnNumber=0&amp;StartingLineNumber=0&amp;Timestamp=569354173.673375"
+>>>>>>> parent of a41bd88... dz 1, 2
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
+<<<<<<< HEAD
          documentLocation = "file:///Users/flp4/Documents/Cloud%20Mail.Ru/GB_ios/Xcode/PlayGround/MyPlayground.playground#CharacterRangeLen=231&amp;CharacterRangeLoc=136&amp;EndingColumnNumber=0&amp;EndingLineNumber=24&amp;StartingColumnNumber=0&amp;StartingLineNumber=12&amp;Timestamp=569350675.54214"
+=======
+         documentLocation = "file:///Users/flp4/Documents/Cloud%20Mail.Ru/GB_ios/Xcode/PlayGround/MyPlayground.playground#CharacterRangeLen=403&amp;CharacterRangeLoc=146&amp;EndingColumnNumber=0&amp;EndingLineNumber=32&amp;StartingColumnNumber=0&amp;StartingLineNumber=12&amp;Timestamp=569354173.6735131"
+>>>>>>> parent of a41bd88... dz 1, 2
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
