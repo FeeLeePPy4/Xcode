@@ -9,7 +9,7 @@
 import Foundation
 
 // 1) Conversion decimal to binary with Stack
-/*
+
 func push(array: [Int], number: Int) -> [Int] {
     var mutArr = array
     mutArr.append(number)
@@ -47,4 +47,4 @@ var store: [Int] = []
 
 store = conversion(arr: store, num: decNum)
 pop(array: store)
-*/
+
