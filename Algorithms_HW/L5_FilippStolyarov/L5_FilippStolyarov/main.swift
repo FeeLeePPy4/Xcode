@@ -72,3 +72,31 @@ for i in equation {
 
 print("Bracket sequence is", arrCompare.isEmpty ? "right" : "not right")
 */
+
+// 6) Queue
+// With array
+/*
+func enqueue(array: [Int], numOfDigits: Int) -> [Int] {  // добавление данных
+    var mutArr = array
+    for _ in 1...numOfDigits {
+        mutArr.append(Int.random(in: 1...9))
+    }
+    print(mutArr)
+    return mutArr
+}
+
+func dequeue(array: [Int]) {  // извлечение данных начиная с начала
+    var prntStr = String()
+    var mutArr = array
+    repeat {
+        prntStr.append(String(mutArr[0]))
+        mutArr.removeFirst()
+    } while mutArr.count > 0
+    print(prntStr)
+}
+
+var arr = [Int]()
+
+arr = enqueue(array: arr, numOfDigits: 5)
+dequeue(array: arr)
+*/
