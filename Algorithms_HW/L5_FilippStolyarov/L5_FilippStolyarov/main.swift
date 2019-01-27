@@ -10,13 +10,13 @@ import Foundation
 
 // 1) Conversion decimal to binary with Stack
 /*
-func push(array: [Int], number: Int) -> [Int] {  // добавление данных
+func push(array: [Int], number: Int) -> [Int] {  // adding data
     var mutArr = array
     mutArr.append(number)
     return mutArr
 }
 
-func pop(array: [Int]) {  // извлечение данных начиная с конца
+func pop(array: [Int]) {  // extracting data from the end
     var prntStr = String()
     var i = array.count - 1
     repeat {
@@ -26,7 +26,7 @@ func pop(array: [Int]) {  // извлечение данных начиная с
     print("\(prntStr).0")
 }
 
-func conversion(arr: [Int], num: Double) -> [Int] {  // перевод в двоичную систему
+func conversion(arr: [Int], num: Double) -> [Int] {  // conversion to binary system
     var numb = num
     var mArr = arr
     for _ in 1...11 {
@@ -76,7 +76,7 @@ print("Bracket sequence is", arrCompare.isEmpty ? "right" : "not right")
 // 6) Queue
 // With array
 /*
-func enqueue(array: [Int], numOfDigits: Int) -> [Int] {  // добавление данных
+func enqueue(array: [Int], numOfDigits: Int) -> [Int] {  // adding data
     var mutArr = array
     for _ in 1...numOfDigits {
         mutArr.append(Int.random(in: 1...9))
@@ -85,7 +85,7 @@ func enqueue(array: [Int], numOfDigits: Int) -> [Int] {  // добавление
     return mutArr
 }
 
-func dequeue(array: [Int]) {  // извлечение данных начиная с начала
+func dequeue(array: [Int]) {  // extracting data from beginning
     var prntStr = String()
     var mutArr = array
     repeat {
@@ -104,7 +104,7 @@ dequeue(array: arr)
 // 7) Two-way queue
 // v.1
 /*
-func pushFront(array: [Int], number: Int) -> [Int] {  // добавление данных в начало
+func pushFront(array: [Int], number: Int) -> [Int] {  // adding data to beginning
     var mutArr = array
     var i = number
     repeat {
@@ -115,7 +115,7 @@ func pushFront(array: [Int], number: Int) -> [Int] {  // добавление д
     return mutArr
 }
 
-func pushBack(array: [Int], number: Int) -> [Int] {  // добавление данных в конец
+func pushBack(array: [Int], number: Int) -> [Int] {  // adding data to end
     var mutArr = array
     var i = number
     repeat {
@@ -126,7 +126,7 @@ func pushBack(array: [Int], number: Int) -> [Int] {  // добавление д�
     return mutArr
 }
 
-func popBack(array: [Int], number: Int) -> [Int] {  // извлечение данных с конца
+func popBack(array: [Int], number: Int) -> [Int] {  // extracting data from end
     var mutArr = array
     var i = number
     var prntStr = String()
@@ -139,7 +139,7 @@ func popBack(array: [Int], number: Int) -> [Int] {  // извлечение да
     return mutArr
 }
 
-func popFront(array: [Int], number: Int) -> [Int] {  // извлечение данных сначала
+func popFront(array: [Int], number: Int) -> [Int] {  // extracting data from beginning
     var mutArr = array
     var i = number
     var prntStr = String()
@@ -160,9 +160,9 @@ arr = popBack(array: arr, number: 5)
 arr = popFront(array: arr, number: 5)
 */
 
-// v.2
+// v.2 with random
 /*
-func randPush(array: [Int], number: Int) -> [Int] {  // добавление данных с рандомным выбором начала/конца
+func randPush(array: [Int], number: Int) -> [Int] {  // adding data with random choose beginning/end
     var mutArr = array
     var r = Int()
     for i in 1...number {
@@ -178,13 +178,13 @@ func randPush(array: [Int], number: Int) -> [Int] {  // добавление д�
     return mutArr
 }
 
-func randPop(array: [Int]) -> [Int] {  // извлечение данных с рандомным выбором начала/конца
+func randPop(array: [Int]) -> [Int] {  // extracting data with random choose beginning/end
     var mutArr = array
     var r = Int()
     for _ in 1...array.count {
         r = Int.random(in: 1...2)
         if r == 1 {
-            print(mutArr[0], terminator: " ")  // печать без перехода на новую строку
+            print(mutArr[0], terminator: " ")  // print without new line
             mutArr.removeFirst()
         }
         else {
