@@ -100,3 +100,104 @@ var arr = [Int]()
 arr = enqueue(array: arr, numOfDigits: 5)
 dequeue(array: arr)
 */
+
+// 7) Two-way queue
+// v.1
+/*
+func pushFront(array: [Int], number: Int) -> [Int] {  // добавление данных в начало
+    var mutArr = array
+    var i = number
+    repeat {
+        mutArr.insert(i, at: 0)
+        i -= 1
+    } while i > 0
+    print(mutArr)
+    return mutArr
+}
+
+func pushBack(array: [Int], number: Int) -> [Int] {  // добавление данных в конец
+    var mutArr = array
+    var i = number
+    repeat {
+        mutArr.append(i)
+        i -= 1
+    } while i > 0
+    print(mutArr)
+    return mutArr
+}
+
+func popBack(array: [Int], number: Int) -> [Int] {  // извлечение данных с конца
+    var mutArr = array
+    var i = number
+    var prntStr = String()
+    repeat {
+        prntStr.append(String(mutArr[mutArr.count - 1]))
+        mutArr.removeLast()
+        i -= 1
+    } while i > 0
+    print(prntStr)
+    return mutArr
+}
+
+func popFront(array: [Int], number: Int) -> [Int] {  // извлечение данных сначала
+    var mutArr = array
+    var i = number
+    var prntStr = String()
+    repeat {
+        prntStr.append(String(mutArr[0]))
+        mutArr.removeFirst()
+        i -= 1
+    } while i > 0
+    print(prntStr)
+    return mutArr
+}
+
+var arr = [Int]()
+
+arr = pushFront(array: arr, number: 5)
+arr = pushBack(array: arr, number: 5)
+arr = popBack(array: arr, number: 5)
+arr = popFront(array: arr, number: 5)
+*/
+
+// v.2
+/*
+func randPush(array: [Int], number: Int) -> [Int] {  // добавление данных с рандомным выбором начала/конца
+    var mutArr = array
+    var r = Int()
+    for i in 1...number {
+        r = Int.random(in: 1...2)
+        if r == 1 {
+            mutArr.insert(i, at: 0)
+        }
+        else {
+            mutArr.append(i)
+        }
+    }
+    print(mutArr)
+    return mutArr
+}
+
+func randPop(array: [Int]) -> [Int] {  // извлечение данных с рандомным выбором начала/конца
+    var mutArr = array
+    var r = Int()
+    for _ in 1...array.count {
+        r = Int.random(in: 1...2)
+        if r == 1 {
+            print(mutArr[0], terminator: " ")  // печать без перехода на новую строку
+            mutArr.removeFirst()
+        }
+        else {
+            print(mutArr[mutArr.count - 1], terminator: " ")
+            mutArr.removeLast()
+        }
+    }
+    print("") // Indent exit code
+    return mutArr
+}
+
+var arr = [Int]()
+
+arr = randPush(array: arr, number: 10)
+arr = randPop(array: arr)
+*/
