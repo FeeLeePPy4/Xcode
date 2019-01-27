@@ -10,13 +10,13 @@ import Foundation
 
 // 1) Conversion decimal to binary with Stack
 /*
-func push(array: [Int], number: Int) -> [Int] {
+func push(array: [Int], number: Int) -> [Int] {  // добавление данных
     var mutArr = array
     mutArr.append(number)
     return mutArr
 }
 
-func pop(array: [Int]) {
+func pop(array: [Int]) {  // извлечение данных начиная с конца
     var prntStr = String()
     var i = array.count - 1
     repeat {
@@ -26,7 +26,7 @@ func pop(array: [Int]) {
     print("\(prntStr).0")
 }
 
-func conversion(arr: [Int], num: Double) -> [Int] {
+func conversion(arr: [Int], num: Double) -> [Int] {  // перевод в двоичную систему
     var numb = num
     var mArr = arr
     for _ in 1...11 {
@@ -49,4 +49,26 @@ store = conversion(arr: store, num: decNum)
 pop(array: store)
 */
 
+// 3) Bracket sequence
+/*
+var equation: String = "[2/{5*(4+7)}]"
+var arrCompare = [Character]()
 
+for i in equation {
+    
+    if (i == "(") || (i == "[") || (i == "{") {
+        arrCompare.append(i)
+    } else if (i == ")") {
+        if arrCompare[arrCompare.count - 1] == "(" { arrCompare.remove(at: arrCompare.count - 1) }
+        else { print("No )!"); break }
+    } else if (i == "]") {
+        if arrCompare[arrCompare.count - 1] == "[" { arrCompare.remove(at: arrCompare.count - 1) }
+        else { print("No ]!"); break }
+    } else if (i == "}") {
+        if arrCompare[arrCompare.count - 1] == "{" { arrCompare.remove(at: arrCompare.count - 1) }
+        else { print("No }!"); break }
+    }
+}
+
+print("Bracket sequence is", arrCompare.isEmpty ? "right" : "not right")
+*/
