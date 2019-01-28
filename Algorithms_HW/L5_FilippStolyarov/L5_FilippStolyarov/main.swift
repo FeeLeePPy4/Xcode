@@ -70,12 +70,13 @@ for i in equation {
 
 print("Bracket sequence is", arrCompare.isEmpty ? "right" : "not right")
 */
-
-let equation = "2+2*2"
+//  222*2/3++
+let equation = "2+2*2/2+3"
 var exitStr = [Character]()
 var stack = [Character]()
 
 for i in equation {
+    
     if i == "+" || i == "-" {
         if (stack.count > 0) && (stack[stack.count - 1] == "*" || stack[stack.count - 1] == "/") {
             exitStr.append(stack[stack.count - 1])
@@ -83,7 +84,11 @@ for i in equation {
         }
         stack.append(i)
     }
-    else if i == "*" {
+    else if i == "*" || i == "/" {
+        if (stack.count > 0) && (stack[stack.count - 1] == "*" || stack[stack.count - 1] == "/") {
+            exitStr.append(stack[stack.count - 1])
+            stack.removeLast()
+        }
         stack.append(i)
     }
     else { exitStr.append(i) }
