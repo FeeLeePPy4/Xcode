@@ -70,10 +70,9 @@ for i in equation {
 
 print("Bracket sequence is", arrCompare.isEmpty ? "right" : "not right")
 */
-//  222*2/3++
-let equation = "2+2*2/2+3"
-var exitStr = [Character]()
-var stack = [Character]()
+let equation = "2+2*2/(2+3*3)"
+var exitStr = [Character]()  // final expression
+var stack = [Character]()  // stack
 
 for i in equation {
     
@@ -91,7 +90,18 @@ for i in equation {
         }
         stack.append(i)
     }
-    else { exitStr.append(i) }
+    else if i == "(" {
+        stack.append(i)
+    }
+    else if i == ")" {
+        repeat {
+            if stack.count == 0 { print("ERROR!"); break }
+            exitStr.append(stack[stack.count - 1])
+            stack.removeLast()
+        } while stack[stack.count - 1] != "("
+        stack.removeLast()
+    }
+    else { exitStr.append(i) }  // adding other symbols - that's must by only the numbers
 }
 
 repeat {
