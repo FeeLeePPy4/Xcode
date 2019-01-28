@@ -70,6 +70,9 @@ for i in equation {
 
 print("Bracket sequence is", arrCompare.isEmpty ? "right" : "not right")
 */
+
+// 5) Reverse Polish Entry
+/*
 let equation = "2+2*2/(2+3*3)"
 var exitStr = [Character]()  // final expression
 var stack = [Character]()  // stack
@@ -110,10 +113,10 @@ repeat {
 } while stack.count > 0
 
 print(exitStr)
-
+*/
 
 // 6) Queue
-// With array
+// With array, only
 /*
 func enqueue(array: [Int], numOfDigits: Int) -> [Int] {  // adding data
     var mutArr = array
