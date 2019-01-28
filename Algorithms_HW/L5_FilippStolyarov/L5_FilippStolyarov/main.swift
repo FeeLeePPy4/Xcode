@@ -1,9 +1,7 @@
 //
-//  main.swift
 //  L5_FilippStolyarov
 //
 //  Created by Filipp S.V. on 26/01/2019.
-//  Copyright © 2019 FilippStolyarov. All rights reserved.
 //
 
 import Foundation
@@ -72,6 +70,32 @@ for i in equation {
 
 print("Bracket sequence is", arrCompare.isEmpty ? "right" : "not right")
 */
+
+let equation = "2+2*2"
+var exitStr = [Character]()
+var stack = [Character]()
+
+for i in equation {
+    if i == "+" || i == "-" {
+        if (stack.count > 0) && (stack[stack.count - 1] == "*" || stack[stack.count - 1] == "/") {
+            exitStr.append(stack[stack.count - 1])
+            stack.removeLast()
+        }
+        stack.append(i)
+    }
+    else if i == "*" {
+        stack.append(i)
+    }
+    else { exitStr.append(i) }
+}
+
+repeat {
+    exitStr.append(stack[stack.count - 1])
+    stack.removeLast()
+} while stack.count > 0
+
+print(exitStr)
+
 
 // 6) Queue
 // With array
