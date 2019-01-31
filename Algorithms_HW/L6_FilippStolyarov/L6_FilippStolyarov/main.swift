@@ -109,3 +109,17 @@ print("\nSearch")
 prntTreeS(i: 1, searchNum: number)  // Search
 print("")  // Indent exit code
 */
+
+// 3) DataBase
+/*
+var arrDB = [["name": "zero", "age": "00", "tabN": "000"], ["name": "Ivan", "age": "19", "tabN": "900"], ["name": "Fedor", "age": "22", "tabN": "901"], ["name": "Sergey", "age": "16", "tabN": "902"], ["name": "Yulya", "age": "23", "tabN": "903"], ["name": "Maxim", "age": "30", "tabN": "904"]]
+
+func prntTreeS(i: Int, searchAge: String) {
+    if arrDB[i]["age"] == searchAge { print("Name: \(arrDB[i]["name"]!), TabNumber: \(arrDB[i]["tabN"]!)") }
+    if 2 * i < arrDB.count { prntTreeS(i: 2 * i, searchAge: searchAge) }  // left
+    if 2 * i + 1 < arrDB.count { prntTreeS(i: 2 * i + 1, searchAge: searchAge) }  // right
+}
+
+prntTreeS(i: 1, searchAge: "23")
+*/
+
