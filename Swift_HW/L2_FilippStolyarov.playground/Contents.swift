@@ -1,6 +1,5 @@
 import UIKit
 
-
 //1) Even number function
 /*
 func evenNum(userNum: Int) -> String {
@@ -49,24 +48,44 @@ repeat {
 
 print(arr)
 */
-UInt64.max
-// 18 446 744 073 709 551 615 Max to Uint64
-// 9 223 372 036 854 775 807 Max to Int
-// 12 200 160 415 121 876 738
-// 7 540 113 804 746 346 429
-func sumFib(num1: UInt64, num2: UInt64) {
+
+// 5) funcFib
+// With double
+/*
+func sumFib(num1: Double, num2: Double) -> [Double] {
     var tmpArr = [num1, num2]
-    for i in 0...90 {
-        if tmpArr.count == 103 { break }
+    for i in 0...99 {
         tmpArr.append(tmpArr[i] + tmpArr[i + 1])
     }
-    print(tmpArr)
-    print(tmpArr.count)
+    return tmpArr
 }
 
-var arrFib = [Int]()
-var numb1: UInt64 = 1, numb2: UInt64 = 1
+var arrFib = [Double]()
+var numb1: Double = 1, numb2: Double = 1
 
-sumFib(num1: numb1, num2: numb2)
+arrFib = sumFib(num1: numb1, num2: numb2)
+
+print(arrFib)
+print(arrFib.count)
+*/
+
+// With decimal
+/*
+func sumFib(num1: Decimal, num2: Decimal) -> [Decimal] {
+    var tmpArr = [num1, num2]
+    for i in 0...99 {
+        tmpArr.append(tmpArr[i] + tmpArr[i + 1])
+    }
+    return tmpArr
+}
+
+var arrFib = [Decimal]()
+var numb1: Decimal = 1, numb2: Decimal = 1
+
+arrFib = sumFib(num1: numb1, num2: numb2)
+
+print(arrFib)
+print(arrFib.count)
+*/
 
 
