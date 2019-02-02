@@ -6,7 +6,7 @@ func evenNum(userNum: Int) -> String {
     return userNum % 2 == 0 ? "Yes, your number is even" : "No, your number is not even"
 }
 
-var userNumber = 14
+var userNumber = 8
 
 print(evenNum(userNum: userNumber))
 */
@@ -17,7 +17,7 @@ func divisibleNum(userNum: Int) -> String {
     return userNum % 3 == 0 ? "Yes, your number divisible by 3" : "No, your number is not divisible by 3"
 }
 
-var userNumber = 18
+var userNumber = 198
 
 print(divisibleNum(userNum: userNumber))
 */
@@ -29,6 +29,8 @@ var arr = [Int]()
 for i in 1...100 {
     arr.append(i)
 }
+
+print(arr)
 */
 
 // 4) Deleting numbers
