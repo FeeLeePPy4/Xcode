@@ -88,4 +88,28 @@ print(arrFib)
 print(arrFib.count)
 */
 
+// 6) Eratosthenes
+/*
+func numbers(array: [Int], numb: Int) -> [Int] {
+    var tmpArr = array, count = 0
+    
+    for i in tmpArr {
+        
+        if (i != tmpArr[numb]) && (i % tmpArr[numb] == 0) {
+            tmpArr.remove(at: count)
+            continue
+        }
+        count += 1
+    }
+    if numb != tmpArr.count - 1 { numbers(array: tmpArr, numb: numb + 1) }
+    return tmpArr
+}
 
+var arr = [Int]()
+
+for i in 2...101 {
+    arr.append(i)
+}
+
+print(numbers(array: arr, numb: 0))
+*/
