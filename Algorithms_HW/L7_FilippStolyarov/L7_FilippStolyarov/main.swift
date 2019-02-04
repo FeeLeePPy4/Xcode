@@ -6,6 +6,45 @@
 
 import Foundation
 
+// 1) Matrix from file
+/*
+ var incomingFile = """
+ 5
+ 0 1 0 1 1
+ 1 0 0 1 0
+ 1 0 1 0 0
+ 1 0 0 1 0
+ 0 1 0 0 1
+ """
+ 
+ func makeMatrix(file: String) {
+    
+     var count = 0, arrIndex = -1
+     var sizeMatrix = 0
+     var matrix = [[Int]]()
+     var firstStr = ""
+    
+     for i in file {
+         if Int(String(i)) != nil {
+             if count == 0 { sizeMatrix = Int(String(i))! }
+             else { matrix[arrIndex].append(Int(String(i))!) }
+         }
+         else if i == "\n" { arrIndex += 1; matrix.append([]); firstStr.append("  " + String(arrIndex + 1)) }
+         count += 1
+     }
+     print("Matrix size: ", sizeMatrix, "\n")
+     print("", firstStr)
+    count = 0
+    
+     for _ in matrix {
+         print(count + 1, matrix[count])
+         count += 1
+     }
+ }
+ 
+ makeMatrix(file: incomingFile)
+*/
+
 // 2) G in depth
 /*
 var matrix = [[0,1,1,1,0,0,0,0],
@@ -73,3 +112,5 @@ print(arrMark)  // all tops must be 2
  
  print(arrMark)  // all tops must be 2
  */
+
+
