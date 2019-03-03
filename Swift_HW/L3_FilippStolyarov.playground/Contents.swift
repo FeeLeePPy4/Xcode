@@ -1,8 +1,5 @@
 import UIKit
 
-var a = [1,3,2,8,4,9,6,]
-a.sorted()
-
 // 1) Several structs + 2) with passenger car and truck.
 /*
 enum littleCarType {
