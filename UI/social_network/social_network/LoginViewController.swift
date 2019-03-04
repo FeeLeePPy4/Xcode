@@ -2,6 +2,9 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    private let singInSegueee = "signInSegue"
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -11,14 +14,16 @@ class LoginViewController: UIViewController {
             let password = passwordTextField.text {
             
             if login == "admin" && password == "qwerty" {
-                print("Success!")
+                
+                performSegue(withIdentifier: singInSegueee, sender: self)
+                
             }
             else {
                 print("Failure!")
             }
         }
     }
-    
+     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -70,4 +75,7 @@ class LoginViewController: UIViewController {
         self.scrollView?.endEditing(true)
     }
     
+    @IBAction func unwind(segue: UIStoryboardSegue) {
+        
+    }
 }
