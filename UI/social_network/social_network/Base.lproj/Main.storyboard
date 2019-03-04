@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BqJ-OG-EMZ" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="867"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social_Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgD-RI-WFV">
                                                 <rect key="frame" x="129" y="60" width="117.5" height="21"/>
@@ -73,6 +73,7 @@
                                             <constraint firstItem="NnX-le-Z9o" firstAttribute="top" secondItem="V1T-fY-M4l" secondAttribute="bottom" constant="15" id="an5-H0-7I6"/>
                                             <constraint firstItem="V1T-fY-M4l" firstAttribute="leading" secondItem="DEe-1j-GoB" secondAttribute="leading" id="g5P-x6-Ofi"/>
                                             <constraint firstItem="Del-Pi-G7W" firstAttribute="top" secondItem="DEe-1j-GoB" secondAttribute="bottom" constant="15" id="gcx-jO-fIW"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="edi-5m-Z2r" secondAttribute="bottom" constant="329" id="gyk-IZ-I0f"/>
                                             <constraint firstItem="Del-Pi-G7W" firstAttribute="leading" secondItem="BqJ-OG-EMZ" secondAttribute="leading" constant="60" id="o5K-Ax-a0Z"/>
                                             <constraint firstAttribute="trailing" secondItem="NnX-le-Z9o" secondAttribute="trailing" constant="60" id="o68-xp-5bP"/>
                                             <constraint firstItem="edi-5m-Z2r" firstAttribute="trailing" secondItem="NnX-le-Z9o" secondAttribute="trailing" id="rcG-7W-g8G"/>
@@ -94,7 +95,7 @@
                             <constraint firstAttribute="bottom" secondItem="9LO-rV-Unq" secondAttribute="bottom" id="BwQ-HS-nNX"/>
                             <constraint firstItem="9LO-rV-Unq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H9X-su-7od"/>
                             <constraint firstItem="BqJ-OG-EMZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" priority="750" id="TzE-v8-oUt"/>
-                            <constraint firstItem="BqJ-OG-EMZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1.3" priority="750" id="YyX-q6-IBr"/>
+                            <constraint firstItem="BqJ-OG-EMZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" priority="750" id="YyX-q6-IBr"/>
                             <constraint firstItem="9LO-rV-Unq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="amu-t2-8nj"/>
                             <constraint firstAttribute="trailing" secondItem="9LO-rV-Unq" secondAttribute="trailing" id="h99-nu-6nJ"/>
                         </constraints>
@@ -103,6 +104,7 @@
                     <connections>
                         <outlet property="loginTextField" destination="Del-Pi-G7W" id="sEG-D5-Htg"/>
                         <outlet property="passwordTextField" destination="NnX-le-Z9o" id="dMh-ZV-Htk"/>
+                        <outlet property="scrollView" destination="9LO-rV-Unq" id="RZw-Xr-N4C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
