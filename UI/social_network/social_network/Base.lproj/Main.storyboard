@@ -109,7 +109,7 @@
                         <outlet property="loginTextField" destination="Del-Pi-G7W" id="sEG-D5-Htg"/>
                         <outlet property="passwordTextField" destination="NnX-le-Z9o" id="dMh-ZV-Htk"/>
                         <outlet property="scrollView" destination="9LO-rV-Unq" id="RZw-Xr-N4C"/>
-                        <segue destination="UgV-6M-Sop" kind="show" identifier="signinSegue" id="MiV-U9-T2n"/>
+                        <segue destination="UgV-6M-Sop" kind="show" identifier="signInSegue" id="MiV-U9-T2n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
