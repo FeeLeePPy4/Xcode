@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
         if let login = loginTextField.text,
             let password = passwordTextField.text {
             
-            if login == "admin" && password == "qwerty" {
+            if login == "a" && password == "q" {
                 
                 performSegue(withIdentifier: singInSegueee, sender: self)
                 
@@ -75,7 +75,4 @@ class LoginViewController: UIViewController {
         self.scrollView?.endEditing(true)
     }
     
-    @IBAction func unwind(segue: UIStoryboardSegue) {
-        
-    }
 }
